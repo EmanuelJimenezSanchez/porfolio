@@ -8,9 +8,12 @@ import Html from "./icons/Html.astro";
 import PHP from "./icons/PHP.astro";
 import MySQL from "./icons/MySQL.astro";
 import Vue from "./icons/Vue.astro";
+import PostgreSql from "./icons/PostgreSql.astro";
 import Vite from "./icons/Vite.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
+import AstroIcon from "./icons/AstroIcon.astro";
+import Gsap from "./icons/Gsap.astro";
 
 const TAGS = {
   NEXT: {
@@ -58,44 +61,83 @@ const TAGS = {
     class: "bg-black text-white",
     icon: Vite,
   },
+  POSTGRESQL: {
+    name: "PostgreSQL",
+    class: "bg-blue-700 text-white",
+    icon: PostgreSql,
+  },
+  ASTROICON: {
+    name: "Astro",
+    class: "bg-black text-white",
+    icon: AstroIcon,
+  },
+  GSAP: {
+    name: "GSAP",
+    class: "bg-green-700 text-white",
+    icon: Gsap,
+  },
 };
 const PROJECTS = [
+  {
+    title: "Shorikame Cards – Tienda en línea de TCG y coleccionables",
+    description:
+      "Diseñé y desarrollé una plataforma e-commerce enfocada en la venta de cartas coleccionables y accesorios. El proyecto incluyó la implementación de un catálogo dinámico, un panel de administración para productos, promociones, banners, usuarios y ventas. Se implementaron pasarelas de pago seguras.",
+    link: "https://shorikamecards.com/",
+    github: "",
+    image: "/projects/shorikamecards.webp",
+    tags: [
+      TAGS.VUE,
+      TAGS.TAILWIND,
+      TAGS.JAVASCRIPT,
+      TAGS.VITE,
+      TAGS.POSTGRESQL,
+    ],
+  },
   {
     title: "DevWebCamp - Eventos de desarrolladores",
     description:
       "Pagina web para eventos de desarrolladores. Creada con JavaScript, HTML, CSS, PHP, MySQL y Node.js. Este proyecto fue parte del curso de Juan Pablo de la Torre.",
-    link: "https://emanuel-devwebcamp.domcloud.dev/",
+    link: "https://devwebcamp-phpmvc-emanuel.mnz.dom.my.id/",
     github: "https://github.com/EmanuelJimenezSanchez/DevWebCamp.git",
     image: "/projects/devwebcamp.webp",
     tags: [TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS, TAGS.PHP, TAGS.MYSQL],
   },
-  {
-    title: "Administrador de Clientes - Aplicación web para CRM",
-    description:
-      "Aplicación web para administrar clientes. Creada con Vue.js, Tailwind CSS y Vite. Se implementó Firestore y Vuefire para el almacenamiento de los datos.",
-    link: "https://crm-vue-rouge.vercel.app/",
-    github: "https://github.com/EmanuelJimenezSanchez/crm-vue.git",
-    image: "/projects/crm-vue.webp",
-    tags: [TAGS.VUE, TAGS.TAILWIND, TAGS.JAVASCRIPT, TAGS.VITE],
-  },
+  // {
+  //   title: "Administrador de Clientes - Aplicación web para CRM",
+  //   description:
+  //     "Aplicación web para administrar clientes. Creada con Vue.js, Tailwind CSS y Vite. Se implementó Firestore y Vuefire para el almacenamiento de los datos.",
+  //   link: "https://crm-vue-rouge.vercel.app/",
+  //   github: "https://github.com/EmanuelJimenezSanchez/crm-vue.git",
+  //   image: "/projects/crm-vue.webp",
+  //   tags: [TAGS.VUE, TAGS.TAILWIND, TAGS.JAVASCRIPT, TAGS.VITE],
+  // },
   {
     title: "UpTask - Administrador de Proyectos",
     description:
       "Administrador de proyectos. Creado con JavaScript, HTML, CSS, PHP y MySQL. Se usó una arquitectura MVC y se implementarón buenas prácticas de programación.Este proyecto fue parte del curso de Juan Pablo de la Torre.",
-    link: "https://uptask-emanuel.domcloud.dev/dashboard",
+    link: "https://uptask-emanuel-jimenez.mnz.dom.my.id/",
     github: "https://github.com/EmanuelJimenezSanchez/UpTask.git",
     image: "/projects/uptask.webp",
     tags: [TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS, TAGS.PHP, TAGS.MYSQL],
   },
   {
-    title: "AppSalon - Registro de citas para salón de belleza",
+    title: "Landing Page - GTA VI",
     description:
-      "Aplicación web para el registro de citas en un salón de belleza. Creada con JavaScript, HTML, CSS, PHP y MySQL. Se usó una arquitectura MVC y se implementarón buenas prácticas de programación.",
-    link: "https://appsalon-emanuel.domcloud.dev/cita",
-    github: "https://github.com/EmanuelJimenezSanchez/APPSalon_MVC_PHP.git",
-    image: "/projects/appsalon.webp",
-    tags: [TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS, TAGS.PHP, TAGS.MYSQL],
+      "Clon de la landing page de GTA VI para practicar las animaciones con GSAP.",
+    link: "https://web-gta6.vercel.app/",
+    github: "https://github.com/EmanuelJimenezSanchez/web-gta6.git",
+    image: "/projects/gta-6.webp",
+    tags: [TAGS.GSAP, TAGS.ASTROICON, TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS],
   },
+  // {
+  //   title: "AppSalon - Registro de citas para salón de belleza",
+  //   description:
+  //     "Aplicación web para el registro de citas en un salón de belleza. Creada con JavaScript, HTML, CSS, PHP y MySQL. Se usó una arquitectura MVC y se implementarón buenas prácticas de programación.",
+  //   link: "https://appsalon-emanuel.domcloud.dev/cita",
+  //   github: "https://github.com/EmanuelJimenezSanchez/APPSalon_MVC_PHP.git",
+  //   image: "/projects/appsalon.webp",
+  //   tags: [TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS, TAGS.PHP, TAGS.MYSQL],
+  // },
 ];
 ---
 
